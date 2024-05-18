@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d11627-cec5-461d-a4bf-02b1462d38c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_project/pythonproject.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_project/pythonproject.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/pythonproject.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/pythonproject.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datasets/symtoms_df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/symtoms_df.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/developer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/developer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="93d11627-cec5-461d-a4bf-02b1462d38c3" name="Changes" comment="niceg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,8 +121,17 @@
       <workItem from="1715991607667" duration="8000" />
       <workItem from="1715998191620" duration="5107000" />
       <workItem from="1716017734597" duration="1647000" />
-      <workItem from="1716026973627" duration="9349000" />
+      <workItem from="1716026973627" duration="9653000" />
     </task>
+    <task id="LOCAL-00001" summary="niceg">
+      <option name="closed" value="true" />
+      <created>1716037226392</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716037226392</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +174,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="niceg" />
+    <option name="LAST_COMMIT_MESSAGE" value="niceg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716030824676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
