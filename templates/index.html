@@ -103,8 +103,6 @@
 
 
 
-
-
 {% if predicted_disease %}
 
 <!-- Results -->
@@ -251,42 +249,11 @@
         recognition.onresult = function (event) {
             let result = event.results[0][0].transcript;
 
-            // Split the transcribed text into individual words
-            const words = result.split(' ');
+            // Replace spaces with underscores
+            result = result.replace(/\s/g, '_');
 
-            // Initialize an array to store formatted symptoms
-            const formattedSymptoms = [];
-
-            // Iterate over each word to format the symptoms
-            words.forEach(word => {
-                // Trim any leading or trailing whitespace
-                const trimmedWord = word.trim();
-
-                // Check if the word contains a comma
-                if (trimmedWord.includes(',')) {
-                    // Remove any existing underscores
-                    const formattedWord = trimmedWord.replace(/_/g, '');
-
-                    // Push the formatted word to the array
-                    formattedSymptoms.push(formattedWord);
-                } else {
-                    // Check if the word contains multiple words separated by space
-                    const spaceIndex = trimmedWord.indexOf(' ');
-                    if (spaceIndex !== -1) {
-                        // Replace spaces with underscores
-                        const formattedWord = trimmedWord.replace(/ /g, '_');
-
-                        // Push the formatted word to the array
-                        formattedSymptoms.push(formattedWord);
-                    } else {
-                        // Push the word as is to the array
-                        formattedSymptoms.push(trimmedWord);
-                    }
-                }
-            });
-
-            // Join the formatted symptoms with commas
-            result = formattedSymptoms.join(', ');
+            // Replace 'and' with comma and remove underscores around it
+            result = result.replace(/_and_/gi, ',').replace(/_,_/gi, ',');
 
             // Display the transcribed text
             transcriptionDiv.textContent = result;
@@ -302,6 +269,7 @@
         recognition.start();
     }
 </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
