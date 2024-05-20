@@ -100,20 +100,21 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
-        symptoms = request.form.getlist('symptoms')
+        symptoms = request.form.getlist('symptoms[]')
         if not symptoms:
             message = "Please select symptoms."
-            return render_template('index.html', message=message, symptoms=symptoms_dict.keys())
+            return render_template('index.html', message=message, symptoms_dict=symptoms_dict)
 
         predicted_disease = get_predicted_value(symptoms)
         if predicted_disease == "Symptom not recognized":
-            return render_template('index.html', message="One or more symptoms not recognized.", symptoms=symptoms_dict.keys())
+            return render_template('index.html', message="One or more symptoms not recognized.", symptoms_dict=symptoms_dict)
 
         dis_des, my_precautions, my_medications, my_diet, my_workout = helper(predicted_disease)
         return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
-                               my_precautions=my_precautions, medications=my_medications, my_diet=my_diet,
-                               workout=my_workout, symptoms=symptoms_dict.keys())
-    return render_template('index.html', symptoms=symptoms_dict.keys())
+                                my_precautions=my_precautions, medications=my_medications,
+                                my_diet=my_diet, workout=my_workout, symptoms_dict=symptoms_dict)
+
+    return render_template('index.html', symptoms_dict=symptoms_dict)
 
 # about view funtion and path
 @app.route('/about')
@@ -137,3 +138,4 @@ def blog():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
