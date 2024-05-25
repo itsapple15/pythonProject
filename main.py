@@ -13,6 +13,7 @@ workout = pd.read_csv("datasets/workout_df.csv")
 description = pd.read_csv("datasets/description.csv")
 medications = pd.read_csv('datasets/medications.csv')
 diets = pd.read_csv("datasets/diets.csv")
+imgs = pd.read_csv("datasets/symptoms_img.csv")
 
 # Load model
 svc = pickle.load(open('models/svc.pkl', 'rb'))
@@ -25,13 +26,17 @@ def helper(dis):
     pre = precautions[precautions['Disease'] == dis][
         ['Precaution_1', 'Precaution_2', 'Precaution_3', 'Precaution_4']].values.flatten().tolist()
 
-    med = medications[medications['Disease'] == dis]['Medication'].tolist()
+    med = medications[medications['Disease'] == dis]['Medication'].values[0].split(',')
+    med = [m.strip().replace("[", "").replace("]", "").replace("'", "") for m in med]
 
-    die = diets[diets['Disease'] == dis]['Diet'].tolist()
+    die = diets[diets['Disease'] == dis]['Diet'].values[0].split(',')
+    die = [d.strip().replace("[", "").replace("]", "").replace("'", "") for d in die]
 
     wrkout = workout[workout['disease'] == dis]['workout'].tolist()
 
-    return desc, pre, med, die, wrkout
+    img = imgs[imgs['Disease'] == dis]['Img'].values[0]
+
+    return desc, pre, med, die, wrkout, img
 
 
 # Symptoms dictionary and diseases list
@@ -95,8 +100,6 @@ def get_predicted_value(patient_symptoms):
 def index():
     return render_template("index.html", symptoms_dict=symptoms_dict)
 
-
-
 @app.route('/predict', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
@@ -109,10 +112,10 @@ def home():
         if predicted_disease == "Symptom not recognized":
             return render_template('index.html', message="One or more symptoms not recognized.", symptoms_dict=symptoms_dict)
 
-        dis_des, my_precautions, my_medications, my_diet, my_workout = helper(predicted_disease)
+        dis_des, my_precautions, my_medications, my_diet, my_workout,img = helper(predicted_disease)
         return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
                                 my_precautions=my_precautions, medications=my_medications,
-                                my_diet=my_diet, workout=my_workout, symptoms_dict=symptoms_dict)
+                                my_diet=my_diet, workout=my_workout, symptoms_dict=symptoms_dict, img=img)
 
     return render_template('index.html', symptoms_dict=symptoms_dict)
 

@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d11627-cec5-461d-a4bf-02b1462d38c3" name="Changes" comment="nicegg">
+    <list default="true" id="93d11627-cec5-461d-a4bf-02b1462d38c3" name="Changes" comment="niceoneee">
+      <change afterPath="$PROJECT_DIR$/datasets/symptoms_img.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/description.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/description.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/medications.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/medications.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/precautions_df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/precautions_df.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/symtoms_df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/symtoms_df.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/workout_df.csv" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/workout_df.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +31,7 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -56,6 +69,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/QUIENIE MAE/PycharmProjects/pythonProject/datasets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -74,8 +88,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject\datasets" />
       <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject\static" />
+      <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject" />
+      <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject\templates" />
       <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject\.ipynb_project" />
-      <recent name="C:\Users\QUIENIE MAE\PycharmProjects\pythonProject\models" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,7 +145,33 @@
       <workItem from="1716096336456" duration="2895000" />
       <workItem from="1716110680421" duration="10261000" />
       <workItem from="1716207728231" duration="1275000" />
-      <workItem from="1716219448503" duration="7186000" />
+      <workItem from="1716219448503" duration="8108000" />
+      <workItem from="1716271093312" duration="3745000" />
+      <workItem from="1716285012861" duration="1263000" />
+      <workItem from="1716355999799" duration="1525000" />
+      <workItem from="1716364126511" duration="3138000" />
+      <workItem from="1716375200586" duration="1173000" />
+      <workItem from="1716514953636" duration="9679000" />
+      <workItem from="1716531977572" duration="3156000" />
+      <workItem from="1716538013934" duration="3233000" />
+      <workItem from="1716542633904" duration="726000" />
+      <workItem from="1716543380340" duration="932000" />
+      <workItem from="1716544347647" duration="4610000" />
+      <workItem from="1716553322239" duration="2116000" />
+      <workItem from="1716555735904" duration="1044000" />
+      <workItem from="1716557050630" duration="1231000" />
+      <workItem from="1716558310657" duration="1117000" />
+      <workItem from="1716559462397" duration="233000" />
+      <workItem from="1716559763824" duration="1274000" />
+      <workItem from="1716561067019" duration="416000" />
+      <workItem from="1716561499400" duration="1637000" />
+      <workItem from="1716564555362" duration="2349000" />
+      <workItem from="1716566956087" duration="588000" />
+      <workItem from="1716601294147" duration="2468000" />
+      <workItem from="1716605503554" duration="1868000" />
+      <workItem from="1716608831337" duration="7133000" />
+      <workItem from="1716615999662" duration="280000" />
+      <workItem from="1716616298659" duration="466000" />
     </task>
     <task id="LOCAL-00001" summary="niceg">
       <option name="closed" value="true" />
@@ -156,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716225115025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="niceoneee">
+      <option name="closed" value="true" />
+      <created>1716231928178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716231928178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,9 +252,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="niceg" />
     <MESSAGE value="nicegg" />
-    <option name="LAST_COMMIT_MESSAGE" value="nicegg" />
+    <MESSAGE value="niceoneee" />
+    <option name="LAST_COMMIT_MESSAGE" value="niceoneee" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716220554411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716616319228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

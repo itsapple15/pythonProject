@@ -1,3 +1,4 @@
+
 ,Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
 0,Drug Reaction,stop irritation,consult nearest hospital,stop taking drug,follow up
 1,Malaria,Consult nearest hospital,avoid oily food,avoid non veg food,keep mosquitos out
@@ -8,7 +9,7 @@
 6,Chronic cholestasis,cold baths,anti itch medicine,consult doctor,eat healthy
 7,hepatitis A,Consult nearest hospital,wash hands through,avoid fatty spicy food,medication
 8,Osteoarthristis,acetaminophen,consult nearest hospital,follow up,salt baths
-9,(vertigo) Paroymsal  Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
+9,(vertigo) Paroymsal Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
 10,Hypoglycemia,lie down on side,check in pulse,drink sugary drinks,consult doctor
 11,Acne,bath twice,avoid fatty spicy food,drink plenty of water,avoid too many products
 12,Diabetes ,have balanced diet,exercise,consult doctor,follow up

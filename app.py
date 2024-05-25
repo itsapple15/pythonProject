@@ -2,8 +2,6 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-# Your existing routes go here
-
 @app.route('/search')
 def search():
     query = request.args.get('q', '')
