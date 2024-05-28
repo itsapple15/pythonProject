@@ -3,26 +3,25 @@ import numpy as np
 import pandas as pd
 import pickle
 
-# Flask app initialization
-app = Flask(__name__)
 
 # Load datasets
-sym_des = pd.read_csv("datasets/symtoms_df.csv")
-precautions = pd.read_csv("datasets/precautions_df.csv")
-workout = pd.read_csv("datasets/workout_df.csv")
-description = pd.read_csv("datasets/description.csv")
-medications = pd.read_csv('datasets/medications.csv')
-diets = pd.read_csv("datasets/diets.csv")
-imgs = pd.read_csv("datasets/symptoms_img.csv")
+sym_des = pd.read_csv("symtoms_df.csv")
+precautions = pd.read_csv("precautions_df.csv")
+workout = pd.read_csv("workout_df.csv")
+description = pd.read_csv("description.csv")
+medications = pd.read_csv("medications.csv")
+diets = pd.read_csv("diets.csv")
+imgs = pd.read_csv("symptoms_img.csv")
 
 # Load model
-svc = pickle.load(open('models/svc.pkl', 'rb'))
+svc = pickle.load(open('../models/svc.pkl', 'rb'))
 
 
 # Helper function
 def helper(dis):
-    dis = str(dis).replace("  ", " ").strip()
+    dis = str(dis).replace("  "," ").strip()
     desc = description[description['Disease'] == dis]['Description'].values[0]
+    
 
     pre = precautions[precautions['Disease'] == dis][
         ['Precaution_1', 'Precaution_2', 'Precaution_3', 'Precaution_4']].values.flatten().tolist()
@@ -75,7 +74,7 @@ symptoms_dict = {'itching': 0, 'skin_rash': 1, 'nodal_skin_eruptions': 2, 'conti
                  'skin_peeling': 125, 'silver_like_dusting': 126, 'small_dents_in_nails': 127,
                  'inflammatory_nails': 128, 'blister': 129, 'red_sore_around_nose': 130, 'yellow_crust_ooze': 131}
 diseases_list = {15: 'Fungal infection', 4: 'Allergy', 16: 'GERD', 9: 'Chronic cholestasis', 14: 'Drug Reaction',
-                 33: 'Peptic ulcer disease', 1: 'AIDS', 12: 'Diabetes', 17: 'Gastroenteritis', 6: 'Bronchial Asthma',
+                 33: 'Peptic ulcer diseae', 1: 'AIDS', 12: 'Diabetes ', 17: 'Gastroenteritis', 6: 'Bronchial Asthma',
                  23: 'Hypertension', 30: 'Migraine', 7: 'Cervical spondylosis', 32: 'Paralysis (brain hemorrhage)',
                  28: 'Jaundice', 29: 'Malaria', 8: 'Chicken pox', 11: 'Dengue', 37: 'Typhoid', 40: 'hepatitis A',
                  19: 'Hepatitis B', 20: 'Hepatitis C', 21: 'Hepatitis D', 22: 'Hepatitis E', 3: 'Alcoholic hepatitis',
@@ -96,50 +95,69 @@ def get_predicted_value(patient_symptoms):
     return diseases_list[svc.predict([input_vector])[0]]
 
 
-# Creating routes
-@app.route("/")
-def index():
-    return render_template("index.html", symptoms_dict=symptoms_dict)
+def home(symptoms):
+    # if request.method == 'POST':
+        # symptoms = request.form.getlist('symptoms[]')
+    if not symptoms:
+        message = "Please select symptoms."
+        return render_template('index.html', message=message, symptoms_dict=symptoms_dict)
 
-@app.route('/predict', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        symptoms = request.form.getlist('symptoms[]')
-        if not symptoms:
-            message = "Please select symptoms."
-            return render_template('index.html', message=message, symptoms_dict=symptoms_dict)
+    predicted_disease = get_predicted_value(symptoms)
+    print(predicted_disease)
+    # if predicted_disease == "Symptom not recognized":
+    #     return render_template('index.html', message="One or more symptoms not recognized.", symptoms_dict=symptoms_dict)
 
-        predicted_disease = get_predicted_value(symptoms)
-        if predicted_disease == "Symptom not recognized":
-            return render_template('index.html', message="One or more symptoms not recognized.", symptoms_dict=symptoms_dict)
+    # dis_des, my_precautions, my_medications, my_diet, my_workout,img = helper(predicted_disease)
+    # return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
+    #                             my_precautions=my_precautions, medications=my_medications,
+    #                             my_diet=my_diet, workout=my_workout, symptoms_dict=symptoms_dict, img=img)
 
-        dis_des, my_precautions, my_medications, my_diet, my_workout,img = helper(predicted_disease)
-        return render_template('index.html', predicted_disease=predicted_disease, dis_des=dis_des,
-                                my_precautions=my_precautions, medications=my_medications,
-                                my_diet=my_diet, workout=my_workout, symptoms_dict=symptoms_dict, img=img)
+    # return render_template('index.html', symptoms_dict=symptoms_dict)
 
-    return render_template('index.html', symptoms_dict=symptoms_dict)
 
-# about view funtion and path
-@app.route('/about')
-def about():
-    return render_template("about.html")
-# contact view funtion and path
-@app.route('/contact')
-def contact():
-    return render_template("contact.html")
+def read_symptoms():
+    # Read the CSV file
+    df = pd.read_csv("symtoms_df.csv")
+    
+    required_columns = ['Symptom_1', 'Symptom_2', 'Symptom_3', 'Symptom_4']
+    if not all(column in df.columns for column in required_columns):
+        raise ValueError("CSV file must contain the following columns: " + ", ".join(required_columns))
+    
+    # Collect all symptoms into a list of lists
+    all_symptoms = []
+    for index, row in df.iterrows():
+        symptoms = [row['Symptom_1'], row['Symptom_2'], row['Symptom_3'], row['Symptom_4']]
+        # Filter out any empty symptoms and strip whitespace from each symptom
+        filtered_symptoms = [symptom.strip() for symptom in symptoms if pd.notna(symptom) and symptom.strip() != '']
+        all_symptoms.append(filtered_symptoms)
+    
+    # Return the list of lists of symptoms
+    return all_symptoms
 
-# developer view funtion and path
-@app.route('/developer')
-def developer():
-    return render_template("developer.html")
-
-# about view funtion and path
-@app.route('/blog')
-def blog():
-    return render_template("blog.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    listahan = []
+    for symp in read_symptoms():
+        listahan.append([get_predicted_value(symp), symp])
+
+    # Sort the list by the predicted value
+    sorted_listahan = sorted(listahan, key=lambda x: x[0])
+
+    # Print the sorted list
+    # for l in sorted_listahan:
+    #     print(l)
+    for disease_id, disease_name in diseases_list.items():
+        found = False
+        # Check if the disease is present in listahan
+        for item in listahan:
+            if item[0] == disease_name:
+                found = True
+                break
+        # If the disease is not found in listahan, print it
+        if not found:
+            print(disease_name)
+
+
+  
 
