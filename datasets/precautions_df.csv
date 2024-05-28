@@ -1,43 +1,42 @@
-
 ,Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
-0,Drug Reaction,stop irritation,consult nearest hospital,stop taking drug,follow up
-1,Malaria,Consult nearest hospital,avoid oily food,avoid non veg food,keep mosquitos out
-2,Allergy,apply calamine,cover area with bandage,,use ice to compress itching
-3,Hypothyroidism,reduce stress,exercise,eat healthy,get proper sleep
-4,Psoriasis,wash hands with warm soapy water,stop bleeding using pressure,consult doctor,salt baths
-5,GERD,avoid fatty spicy food,avoid lying down after eating,maintain healthy weight,exercise
-6,Chronic cholestasis,cold baths,anti itch medicine,consult doctor,eat healthy
-7,hepatitis A,Consult nearest hospital,wash hands through,avoid fatty spicy food,medication
-8,Osteoarthristis,acetaminophen,consult nearest hospital,follow up,salt baths
-9,(vertigo) Paroymsal Positional Vertigo,lie down,avoid sudden change in body,avoid abrupt head movment,relax
-10,Hypoglycemia,lie down on side,check in pulse,drink sugary drinks,consult doctor
-11,Acne,bath twice,avoid fatty spicy food,drink plenty of water,avoid too many products
-12,Diabetes,have balanced diet,exercise,consult doctor,follow up
-13,Impetigo,soak affected area in warm water,use antibiotics,remove scabs with wet compressed cloth,consult doctor
-14,Hypertension,meditation,salt baths,reduce stress,get proper sleep
-15,Peptic ulcer diseae,avoid fatty spicy food,consume probiotic food,eliminate milk,limit alcohol
-16,Dimorphic hemmorhoids(piles),avoid fatty spicy food,consume witch hazel,warm bath with epsom salt,consume alovera juice
-17,Common Cold,drink vitamin c rich drinks,take vapour,avoid cold food,keep fever in check
-18,Chicken pox,use neem in bathing ,consume neem leaves,take vaccine,avoid public places
-19,Cervical spondylosis,use heating pad or cold pack,exercise,take otc pain reliver,consult doctor
-20,Hyperthyroidism,eat healthy,massage,use lemon balm,take radioactive iodine treatment
-21,Urinary tract infection,drink plenty of water,increase vitamin c intake,drink cranberry juice,take probiotics
-22,Varicose veins,lie down flat and raise the leg high,use oinments,use vein compression,dont stand still for long
-23,AIDS,avoid open cuts,wear ppe if possible,consult doctor,follow up
-24,Paralysis (brain hemorrhage),massage,eat healthy,exercise,consult doctor
-25,Typhoid,eat high calorie vegitables,antiboitic therapy,consult doctor,medication
-26,Hepatitis B,consult nearest hospital,vaccination,eat healthy,medication
-27,Fungal infection,bath twice,use detol or neem in bathing water,keep infected area dry,use clean cloths
-28,Hepatitis C,Consult nearest hospital,vaccination,eat healthy,medication
-29,Migraine,meditation,reduce stress,use poloroid glasses in sun,consult doctor
-30,Bronchial Asthma,switch to loose cloothing,take deep breaths,get away from trigger,seek help
-31,Alcoholic hepatitis,stop alcohol consumption,consult doctor,medication,follow up
-32,Jaundice,drink plenty of water,consume milk thistle,eat fruits and high fiberous food,medication
-33,Hepatitis E,stop alcohol consumption,rest,consult doctor,medication
-34,Dengue,drink papaya leaf juice,avoid fatty spicy food,keep mosquitos away,keep hydrated
-35,Hepatitis D,consult doctor,medication,eat healthy,follow up
-36,Heart attack,call ambulance,chew or swallow asprin,keep calm,
-37,Pneumonia,consult doctor,medication,rest,follow up
-38,Arthritis,exercise,use hot and cold therapy,try acupuncture,massage
-39,Gastroenteritis,stop eating solid food for while,try taking small sips of water,rest,ease back into eating
-40,Tuberculosis,cover mouth,consult doctor,medication,rest
+0,Drug Reaction,"Stop the irritation by avoiding scratching and using soothing lotions","Consult the nearest hospital immediately to get professional medical advice","Stop taking the drug that caused the reaction","Follow up with your healthcare provider to monitor the reaction"
+1,Malaria,"Consult the nearest hospital for proper diagnosis and treatment","Avoid oily foods to help reduce nausea and support digestion","Avoid non-vegetarian foods which can be harder to digest","Use mosquito nets and repellents to keep mosquitoes out and prevent bites"
+2,Allergy,"Apply calamine lotion to soothe the skin and reduce itching","Cover the affected area with a sterile bandage to protect it from further irritation","Use ice packs to compress the itching area and reduce swelling","Consult a doctor if symptoms persist or worsen"
+3,Hypothyroidism,"Reduce stress through relaxation techniques like meditation or yoga","Exercise regularly to boost metabolism and energy levels","Maintain a healthy diet rich in nutrients, vitamins, and minerals","Ensure you get proper sleep to help regulate hormones"
+4,Psoriasis,"Wash hands frequently with warm, soapy water to prevent infection","Stop bleeding by applying pressure to the affected area","Consult a doctor to get appropriate treatment options","Salt baths can help to soothe the skin and reduce scaling"
+5,GERD,"Avoid fatty and spicy foods that can trigger symptoms","Do not lie down immediately after eating to prevent acid reflux","Maintain a healthy weight to reduce pressure on the stomach","Incorporate regular exercise into your routine to help with digestion"
+6,Chronic cholestasis,"Take cold baths to alleviate itching and discomfort","Use anti-itch medications as prescribed by a doctor","Consult a doctor for ongoing treatment and monitoring","Eat a healthy diet to support liver function and overall health"
+7,Hepatitis A,"Consult the nearest hospital for proper treatment and care","Wash hands thoroughly and frequently to prevent the spread of infection","Avoid fatty and spicy foods to reduce liver strain","Follow the prescribed medication regimen diligently"
+8,Osteoarthritis,"Take acetaminophen to manage pain and inflammation","Consult the nearest hospital for a comprehensive treatment plan","Regular follow-ups with your doctor are crucial for managing symptoms","Consider salt baths to help relieve joint pain"
+9,(Vertigo) Paroxysmal Positional Vertigo,"Lie down in a comfortable position to minimize dizziness","Avoid sudden changes in body position to prevent vertigo episodes","Avoid abrupt head movements to reduce the risk of triggering vertigo","Relax and try to stay calm to manage symptoms"
+10,Hypoglycemia,"Lie down on your side to prevent injury in case of fainting","Check your pulse and blood sugar levels regularly","Drink sugary drinks to quickly raise your blood sugar levels","Consult a doctor for advice and ongoing management"
+11,Acne,"Bathe twice daily to keep your skin clean and free of excess oil","Avoid fatty and spicy foods which can exacerbate acne","Drink plenty of water to keep your skin hydrated","Avoid using too many skincare products that can irritate the skin"
+12,Diabetes,"Maintain a balanced diet to manage blood sugar levels","Exercise regularly to help control glucose levels","Consult a doctor for a tailored treatment plan","Regular follow-ups are essential for monitoring your condition"
+13,Impetigo,"Soak the affected area in warm water to soften scabs","Use prescribed antibiotics to treat the infection","Remove scabs gently with a wet, compressed cloth","Consult a doctor for appropriate treatment and advice"
+14,Hypertension,"Practice meditation to help reduce stress and lower blood pressure","Take regular salt baths to relax your muscles and improve circulation","Reduce stress through mindfulness and relaxation techniques","Ensure you get proper sleep to help regulate blood pressure"
+15,Peptic ulcer disease,"Avoid fatty and spicy foods that can irritate the stomach lining","Consume probiotic foods to promote healthy digestion and gut flora","Eliminate milk from your diet if it aggravates your symptoms","Limit alcohol consumption to prevent further irritation of the stomach lining"
+16,Dimorphic hemorrhoids (piles),"Avoid fatty and spicy foods that can worsen symptoms","Use witch hazel to reduce swelling and discomfort","Take warm baths with Epsom salt to soothe the affected area","Consume aloe vera juice to promote healing and reduce inflammation"
+17,Common Cold,"Drink vitamin C-rich drinks to boost your immune system","Take steam inhalation or vapor to clear nasal passages","Avoid cold foods and beverages that can aggravate symptoms","Monitor your fever and seek medical advice if it persists"
+18,Chicken pox,"Use neem leaves in your bath to reduce itching and soothe the skin","Consume neem leaves to help boost your immune system","Get vaccinated to prevent future outbreaks","Avoid public places to prevent spreading the infection"
+19,Cervical spondylosis,"Use a heating pad or cold pack to alleviate pain and inflammation","Engage in regular exercise to strengthen neck muscles","Take over-the-counter pain relievers as needed","Consult a doctor for a comprehensive treatment plan"
+20,Hyperthyroidism,"Maintain a healthy diet to support overall well-being","Massage the neck area to relieve tension","Use lemon balm to help reduce symptoms naturally","Consider radioactive iodine treatment as advised by a doctor"
+21,Urinary tract infection,"Drink plenty of water to flush out bacteria","Increase vitamin C intake to boost immunity","Drink cranberry juice to help prevent bacteria from adhering to the urinary tract","Take probiotics to maintain healthy gut and urinary tract flora"
+22,Varicose veins,"Lie down flat and raise your legs to improve blood circulation","Use ointments to reduce swelling and discomfort","Use vein compression stockings to prevent worsening of varicose veins","Avoid standing still for long periods to reduce pressure on veins"
+23,AIDS,"Avoid open cuts and wounds to prevent infections","Wear personal protective equipment (PPE) if possible to reduce the risk of infection","Consult a doctor regularly for monitoring and treatment","Follow up with healthcare providers to manage your condition"
+24,Paralysis (brain hemorrhage),"Massage the affected areas to improve blood flow and muscle function","Maintain a healthy diet to support recovery","Engage in regular exercise to promote muscle strength and flexibility","Consult a doctor for a tailored rehabilitation plan"
+25,Typhoid,"Eat high-calorie vegetables to maintain energy levels","Undergo antibiotic therapy as prescribed by a healthcare provider","Consult a doctor for appropriate treatment and monitoring","Take all prescribed medications as directed"
+26,Hepatitis B,"Consult the nearest hospital for professional medical care","Get vaccinated to prevent hepatitis B infection","Maintain a healthy diet to support liver function","Follow prescribed medication regimens carefully"
+27,Fungal infection,"Bathe twice daily to keep the skin clean and prevent fungal growth","Use antiseptic solutions like Dettol or neem in your bath water","Keep the infected area dry to prevent the fungus from spreading","Use clean clothes and avoid sharing personal items"
+28,Hepatitis C,"Consult the nearest hospital for proper diagnosis and treatment","Get vaccinated to prevent other types of hepatitis","Maintain a healthy diet to support liver health","Adhere to prescribed medication plans for effective management"
+29,Migraine,"Practice meditation to help manage stress and prevent migraines","Reduce stress through relaxation techniques and lifestyle changes","Use polaroid glasses to reduce light sensitivity when outdoors","Consult a doctor for comprehensive migraine management"
+30,Bronchial Asthma,"Switch to loose clothing to avoid constriction of the chest","Take deep breaths to help calm the respiratory system","Identify and get away from asthma triggers","Seek medical help if symptoms worsen or do not improve"
+31,Alcoholic hepatitis,"Stop alcohol consumption immediately to prevent further liver damage","Consult a doctor for appropriate treatment and support","Take prescribed medications to manage symptoms and promote healing","Regular follow-ups are essential for monitoring liver health"
+32,Jaundice,"Drink plenty of water to help flush out toxins from the body","Consume milk thistle to support liver function","Eat fruits and high-fiber foods to promote digestion","Take medications as prescribed by a healthcare provider"
+33,Hepatitis E,"Stop alcohol consumption to avoid further liver strain","Get plenty of rest to support the body's healing process","Consult a doctor for proper diagnosis and treatment","Follow prescribed medications and treatment plans"
+34,Dengue,"Drink papaya leaf juice to help increase platelet count","Avoid fatty and spicy foods to reduce digestive strain","Use mosquito repellents and nets to prevent mosquito bites","Stay hydrated by drinking plenty of fluids"
+35,Hepatitis D,"Consult a doctor for accurate diagnosis and treatment","Adhere to prescribed medication regimens to manage symptoms","Maintain a healthy diet to support liver function","Regular follow-ups are important to monitor the condition"
+36,Heart attack,"Call an ambulance immediately for emergency medical assistance","Chew or swallow an aspirin to help prevent blood clots","Keep calm and avoid physical exertion while waiting for help","Follow emergency medical instructions carefully"
+37,Pneumonia,"Consult a doctor for proper diagnosis and antibiotic treatment","Take prescribed medications to manage symptoms","Get plenty of rest to support the body's recovery","Follow up with healthcare providers to monitor progress"
+38,Arthritis,"Engage in regular exercise to maintain joint flexibility","Use hot and cold therapy to reduce pain and inflammation","Consider acupuncture as an alternative pain relief method","Massage affected areas to improve circulation and reduce stiffness"
+39,Gastroenteritis,"Stop eating solid foods for a while to let your stomach settle","Take small sips of water to stay hydrated","Get plenty of rest to support recovery","Ease back into eating with bland, easy-to-digest foods"
+40,Tuberculosis,"Cover your mouth when coughing or sneezing to prevent spreading the infection","Consult a doctor for accurate diagnosis and treatment","Take prescribed medications as directed","Get plenty of rest to help your body fight the infection"
